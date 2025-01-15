@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <div class="center-container">
+    <div class="login-container">
+        <a href="index.html" class="text-decoration-none">
+            <p class="fs-2 fw-bold textOrange text-center  " style="margin-top: 30px;">hepsiburada</p>
+          </a>
+          <div class="border mt-5">
+            <div class="d-flex justify-content-between mt-3 position-relative">
+              <a href="giriş.html" class="text-decoration-none position-relative link-text" onclick="toggleActive(event, this)">
+                <p class="text-dark loginText">Giriş Yap</p>
+                <div class="orange-line_login"></div>
+              </a>
+              <a href="üye.html" class="text-decoration-none position-relative link-text" onclick="toggleActive(event, this)">
+                <p class="text-dark üyeText" >Üye Ol</p>
+                <div class="orange-line_subscribe"></div>
+              </a>
+            </div>
+            <div class="paddingLogin">
+              <input type="email" class="form-control backgrButton" id="emailInput" placeholder="E-posta adresi veya Telefon Numarası "
+                style="max-height: 1180px;">
+            </div>
+            <a href="#" class="text-decoration-none">
+                <p class="textOrange mt-2 fw-bolder forgetPassword">Şifremi unuttum</p>
+              </a>
+              <div class="d-grid mt-3 paddingLogin">
+                <button type="button" class="btn btn-orange btn-lg ">Devam et</button>
+              </div>
+        <div class="mt-3 paddingLogin" style="margin-bottom: 80px;">
+          <p class="text-muted smallerText">Kişisel verileriniz, <a href="#" title="Aydınlatma Metni"
+              class="text-decoration-none"><b class="text-dark">Aydınlatma Metni</b></a> kapsamında işlenmektedir.
+            “Devam et” veya “Sosyal Hesap” butonlarından birine basarak <a href="#" title="Üyelik Sözleşmesi"
+              class="text-decoration-none"><b class="text-dark">Üyelik Sözleşmesi</b></a> ’ni ve <a href="#"
+              title="Gizlilik Politikası" class="text-decoration-none"><b class="text-dark">Gizlilik Politikası</b></a>
+            ’nı okuduğunuzu ve kabul ettiğinizi onaylıyorsunuz.</p>
+        </div>
+      </div>
+      <div class="border mt-5 text-center p-4 bg-login-social mb-5">
+        <p class="fw-bold text-muted">Sosyal hesabın ile giriş yap</p>
+        <div class="d-flex justify-content-center mt-2">
+          <a href="#" title="apple kimliği">
+            <span class="border p-2">
+              <i class="fa-brands fa-lg fa-apple" style="color: #000000;"></i>
+            </span>
+          </a>
+          <a href="#" title="google">
+            <span class="border p-2 ms-2">
+              <i class="fa-brands fa-lg fa-google" style="color: #000000;"></i>
+            </span>
+          </a>
+          <a href="#" title="facebook">
+            <span class="border p-2 ms-2">
+              <i class="fa-brands fa-lg fa-facebook" style="color: #637fed;"></i>
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+  </script>
+</body>
+</html>

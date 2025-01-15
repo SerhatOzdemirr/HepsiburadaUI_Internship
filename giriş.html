@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <div class="center-container">
+    <div class="login-container">
+      <a href="index.html" class="text-decoration-none">
+        <p class="fs-2 fw-bold textOrange text-center  " style="margin-top: 30px;">hepsiburada</p>
+      </a>
+      <div class="border mt-5">
+        <div class="d-flex justify-content-between mt-3 position-relative">
+          <a href="#" class="text-decoration-none position-relative link-text" onclick="toggleActive(event, this)">
+            <p class="text-dark loginText">Giriş Yap</p>
+            <div class="orange-line_login"></div>
+          </a>
+          <a href="üye.html" class="text-decoration-none position-relative link-text" onclick="toggleActive(event, this)">
+            <p class="text-dark üyeText" >Üye Ol</p>
+            <div class="orange-line_subscribe"></div>
+          </a>
+        </div>
+        <div class="paddingLogin">
+          <input type="email" class="form-control backgrButton" id="emailInput" placeholder="E-posta adresi"
+            style="max-height: 1180px;">
+        </div>
+        <div class="mt-3 input-group paddingLogin">
+          <input type="password" class="form-control form-control-password backgrButton" id="passwordInput" placeholder="Şifre">
+          <span class="input-group-text backgrButton border-0">
+            <i class="fa-solid fa-eye" id="togglePassword" onclick="togglePasswordVisibility()"></i>
+          </span>
+        </div>
+        <a href="#" class="text-decoration-none">
+          <p class="textOrange mt-2 fw-bolder forgetPassword">Şifremi unuttum</p>
+        </a>
+        <div class="d-grid mt-3 paddingLogin">
+          <button type="button" class="btn btn-orange btn-lg ">Giriş Yap</button>
+        </div>
+        <div class="d-grid mb-5 paddingLogin">
+          <button type="button" class="btn btn-lg  border-dark mt-3">
+            <span class="smallerButtonText mt-2 text-dark">
+              <i class="fa-solid fa-phone"></i>Telefon numarası ile giriş
+            </span>
+          </button>
+        </div>
+      </div>
+      <div class="border mt-5 text-center p-4 bg-login-social mb-5">
+        <p class="fw-bold text-muted">Sosyal hesabın ile giriş yap</p>
+        <div class="d-flex justify-content-center mt-2">
+          <a href="#">
+            <span class="border p-2">
+              <i class="fa-brands fa-lg fa-apple" style="color: #000000;"></i>
+            </span>
+          </a>
+          <a href="#">
+            <span class="border p-2 ms-2">
+              <i class="fa-brands fa-lg fa-google" style="color: #000000;"></i>
+            </span>
+          </a>
+          <a href="#">
+            <span class="border p-2 ms-2">
+              <i class="fa-brands fa-lg fa-facebook" style="color: #637fed;"></i>
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="Assets/javaScript/main.js"></script>
+  <script>
+   function toggleActive(event, link) {
+  document.querySelectorAll('.link-text').forEach(function (item) {
+    item.classList.remove('active');
+  });
+  link.classList.add('active');
+}
+function togglePasswordVisibility() {
+  var passwordInput = document.getElementById('passwordInput');
+  var toggleIcon = document.getElementById('togglePassword');
+  if (passwordInput.type === "password") {
+    passwordInput.type = "text";
+    toggleIcon.classList.remove('fa-eye');
+    toggleIcon.classList.add('fa-eye-slash');
+  } else {
+    passwordInput.type = "password";
+    toggleIcon.classList.remove('fa-eye-slash');
+    toggleIcon.classList.add('fa-eye');
+  }
+}
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
